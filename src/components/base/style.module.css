@@ -1,0 +1,234 @@
+/* Styles for the custom input */
+.customInput {
+    border: none;
+    background: none;
+    outline: none;
+    flex-shrink: 0;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: relative;
+    box-shadow: 0px 4px 8px 0px rgba(21, 21, 21, 0.15);
+}
+
+/* Styles for the placeholder */
+.placeholder {
+    color: var(--placeholder-text);
+}
+
+/* Styles for the date value */
+.dateValue {
+    color: var(--primary-font);
+}
+
+/* Styles for the calendar icon */
+.customCalendarIcon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.toggleSwitch {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.disabledIcon {
+    opacity: 0.5;
+}
+
+.tab-btn {
+    display: flex;
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    padding: 10px 0 5px;
+}
+
+.label {
+    margin-top: 4px;
+    line-height: 0.95;
+    font-size: 0.85rem;
+}
+
+.active {
+    border-bottom: 4px solid var(--primary-yellow);
+}
+
+/* Loading dots container styles */
+.loading-dots-container {
+    margin: 0px 2px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* Loading dot styles */
+.loading-dot {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+
+/* Blink animation keyframes */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Applying the animation to the dots */
+.first-dot {
+    animation: blink 2s ease-in-out infinite;
+}
+
+.second-dot {
+    animation: blink 2s ease-in-out infinite;
+    animation-delay: 200ms;
+}
+
+.third-dot {
+    animation: blink 2s ease-in-out infinite;
+    animation-delay: 400ms;
+}
+
+/* active and inactive btn styles */
+.activeBtn {
+    background-color: var(--primary-yellow);
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--button-contrast-text);
+    border: none;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08),
+        0px 4px 6px 0px rgba(50, 50, 93, 0.11);
+}
+
+.inactiveBtn {
+    background-color: var(--card-bg);
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--primary-font);
+    border: none;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08),
+        0px 4px 6px 0px rgba(50, 50, 93, 0.11);
+}
+
+.borderedActiveBtn {
+    background-color: var(--primary-yellow);
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--button-contrast-text);
+    border: 1px solid var(--primary-yellow);
+}
+
+.borderedInactiveBtn {
+    background-color: var(--card-bg);
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--primary-font);
+    border: 1px solid var(--primary-yellow);
+}
+
+.borderedBtn {
+    background-color: var(--card-bg);
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--primary-font);
+    border: 1px solid var(--input-border);
+}
+
+.borderedBtn:hover {
+    background: var(--white);
+    font-weight: 500;
+    color: var(--hover-yellow);
+}
+
+.regularBorderBtn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: var(--card-bg);
+    color: var(--primary-font);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+}
+
+.regularBorderBtn:hover {
+    background: var(--white);
+    font-weight: 500;
+    color: var(--hover-yellow);
+}
+
+/* custom tooltip styles */
+.tooltipContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipTarget {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    padding: 0 0.5px;
+}
+
+.tooltipTarget:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px var(--light-gray));
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    width: 200px;
+    z-index: 1000;
+}
+
+.btnSecondary {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.popoverStyle {
+    width: 300px;
+    border: 0.3px solid var(--text-warning);
+}
+
+.modalTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

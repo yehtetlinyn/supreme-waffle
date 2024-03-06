@@ -1,0 +1,212 @@
+.confirmationContainer {
+  border-radius: 10px;
+}
+
+.modalContent {
+  border-radius: 20px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 20px 30px;
+}
+
+.modalHeader h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--modal-font);
+}
+
+.modalHeader svg {
+  position: absolute;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  color: var(--medium-gray);
+  cursor: pointer;
+}
+
+.modalBody {
+  padding: 0;
+  text-align: center;
+}
+
+.modalBody svg {
+  width: 60px;
+  height: 60px;
+  margin-top: 16px;
+  color: var(--primary-yellow);
+}
+
+.modalMsg {
+  padding: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--modal-font);
+  text-align: center;
+}
+
+.modalContent span {
+  color: var(--primary-yellow);
+}
+
+.modalBtnContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 30px;
+}
+
+.modalBtnWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.modalFooterBtnWrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.modalCancelBtn {
+  border: none;
+  background: transparent;
+  color: var(--primary-yellow);
+  font-weight: 500;
+  font-size: 17px;
+  transition: all 300ms ease-out;
+}
+
+.modalActionBtn {
+  border-radius: 5px;
+  border: 1px solid var(--primary-yellow);
+  padding: 8px 24px;
+  color: #fff;
+  background: var(--primary-yellow);
+  font-weight: 500;
+  font-size: 17px;
+  transition: all 300ms ease-out;
+}
+
+.modalCancelBorderBtn {
+  border: 1px solid var(--primary-yellow);
+  border-radius: 6px;
+  padding: 8px 24px;
+  margin-right: 0.5rem;
+  background: transparent;
+  color: var(--primary-yellow);
+  font-weight: 500;
+  font-size: 17px;
+  transition: all 300ms ease-out;
+}
+
+.modalCancelBtn:hover {
+  background: #fff;
+  color: var(--hover-yellow);
+  font-weight: 500;
+}
+
+.modalCancelBtn:active {
+  border-color: 1px solid var(--active-yellow) !important;
+  background: #fff !important;
+  color: var(--active-yellow) !important;
+  font-weight: 500 !important;
+}
+
+.modalActionBtn:hover {
+  background: var(--hover-yellow);
+  border: 1px solid var(--hover-yellow);
+}
+
+.modalActionBtn:active {
+  background-color: var(--active-yellow) !important;
+}
+
+.deleteModal p {
+  margin-bottom: 0;
+}
+
+.headerText {
+  color: #1e3c72;
+  text-align: center;
+
+  justify-content: center;
+}
+
+/* upload user success modal */
+.userModalBody {
+  padding: 30px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--modal-font);
+  text-align: justify;
+  text-align-last: center;
+}
+
+.userModalBody svg {
+  color: var(--primary-yellow);
+}
+
+.checkIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.userDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  align-self: start;
+}
+
+.userDetailItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userDetailItem svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* loading modal */
+.loadingWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20vh 0;
+  color: var(--primary-yellow);
+  margin: auto 0;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  z-index: 99;
+}
+
+.btn {
+  border: none;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0.75rem 5rem;
+  margin-bottom: 3rem;
+  background: var(--active-yellow);
+}
+
+.btn:hover {
+  background-color: var(--primary-yellow);
+}

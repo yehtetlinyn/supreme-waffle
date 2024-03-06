@@ -1,0 +1,139 @@
+.formBorder {
+    padding: 0 15px;
+    overflow: scroll;
+    margin-bottom: 30px;
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1rem 2rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    width: 100%;
+}
+
+.uploadContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    overflow-x: auto;
+    margin-left: 1rem;
+}
+
+.uploadWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 2px dashed var(--light-gray);
+    border-radius: 6px;
+    width: 100%;
+}
+
+.uploadButton {
+    border: none;
+    background: none;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.previewImage {
+    margin: 5px 6px;
+}
+
+.closeImage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.removeImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.removeImage:hover {
+    transform: scale(1.2);
+    /* Transparent shadow */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+/* inputbox with dropdown */
+.dropdownInputWrapper {
+    display: flex;
+}
+
+.dropdownInputWrapper button {
+    border-radius: 5px 0 0 5px;
+    border-color: var(--light-gray);
+    height: 100%;
+    min-width: 150px;
+    background: #fff;
+    color: var(--primary-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdownInputWrapper input {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.submitContainer {
+    margin-top: auto;
+}
+
+.editDetail {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.editDetail button {
+    border: none;
+    background: transparent;
+    color: var(--primary-blue);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.error-msg {
+    color: var(--text-red);
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 0 6px;
+    font-size: 12px;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+}
+
+.statusItems {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-font);
+}
+
+.alignStart {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

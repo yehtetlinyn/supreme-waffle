@@ -1,0 +1,24 @@
+name: QAT and Staging Deployment
+
+on:
+  workflow_run:
+    workflows: ["Build and Push Docker Image"]
+    types:
+      - completed
+
+env:
+  TAG: nexbedev/tossakan-fe:latest
+
+jobs:
+  deploy-to-qat:
+    runs-on: tossakan-qat-fe
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Pull latest image
+        run: docker pull $TAG
+
+      - name: Deploy to QAT
+        run: docker-compose up -d
+
+      - name: Clean up Docker
+        run: docker system prune -f

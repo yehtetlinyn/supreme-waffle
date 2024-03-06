@@ -1,0 +1,264 @@
+.siteBlueText {
+  color: #599cff;
+  font-weight: 600;
+}
+
+.tabWrapper {
+  width: 100vw;
+  display: flex;
+  column-gap: 65px;
+  border-bottom: 1px solid var(--active-yellow);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.tabWrapper a,
+.tabWrapper > div > span:first-child {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1rem 2rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.selectedTab {
+  border-bottom: 4px solid var(--primary-yellow);
+}
+
+.count {
+  color: var(--white);
+  background: var(--active-yellow);
+  padding: 6px 12px;
+  min-width: 21px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* form */
+.location {
+  border: 1px solid#d9d9d9;
+  border-radius: 6px;
+  padding: 14px 24px 30px 24px;
+  margin: 0 12px;
+}
+
+.chooseOnMap {
+  margin-bottom: 25px;
+  color: var(--primary-yellow);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.chooseOnMap span {
+  margin-left: 6px;
+}
+
+/* attendance checkpoint form */
+.collapse {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.collapse p {
+  margin-bottom: 0;
+  color: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.collapseWrapper {
+  max-height: 90%;
+  overflow-y: scroll;
+  margin-top: 15px;
+}
+
+.noCollapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--mint-cream-yellow);
+  padding: 100px 163px;
+}
+
+.noCollapse p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-font);
+  margin-bottom: 0;
+}
+
+.collapseContentWrapper {
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  padding: 25px 20px 10px 20px;
+}
+
+.collapsedClosed {
+  margin-bottom: 10px;
+  border-radius: 7px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.collapsedOpen {
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.collapseContentOpen {
+  position: relative;
+}
+
+.collapseContentClosed {
+  position: relative;
+  border-radius: 7px;
+  border-left: 5px solid var(--primary-yellow);
+}
+
+.errorCollapseContentClosed {
+  position: relative;
+  border-radius: 7px;
+  border: 1px solid var(--error-border);
+}
+
+.timeRangeWrapper {
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin: 0;
+}
+
+.addMoreBtn {
+  color: #37474f;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: var(--white);
+}
+
+.addMoreBtn span {
+  margin-left: 15px;
+}
+
+/* table */
+.descCollapse {
+  white-space: nowrap;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: default;
+}
+
+.descNotCollapse {
+  cursor: default;
+}
+
+/* site sop */
+.btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+
+/* modal */
+.modalContent {
+  padding: 15px;
+  min-height: 650px;
+}
+
+.nextBtn {
+  min-width: 100px;
+}
+
+.selectMasterSopText {
+  font-size: 14px;
+  margin-top: -15px;
+  color: var(--text-secondary);
+}
+/* copy sop table */
+.hoverableRow:hover td {
+  background: var(--mint-cream-yellow);
+  cursor: pointer;
+}
+
+.selectedRow td {
+  background: var(--mint-cream-yellow);
+}
+
+/* day selector */
+.weekDaySelector,
+.viewWeekDaySelector {
+  margin-right: 0.5rem;
+}
+.weekDaySelector input,
+.viewWeekDaySelector input {
+  display: none !important;
+}
+
+.weekDaySelector input[type="checkbox"] + label,
+.viewWeekDaySelector input[type="checkbox"] + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--primary-yellow);
+  color: var(--primary-yellow);
+  background: var(--white);
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 300ms ease-out;
+}
+
+.weekDaySelector input[type="checkbox"]:checked + label,
+.viewWeekDaySelector input[type="checkbox"]:checked + label,
+.weekDaySelector input[type="checkbox"]:hover + label {
+  background: var(--primary-yellow);
+  color: var(--white);
+}
+
+.viewWeekDaySelector input[type="checkbox"] + label,
+.viewWeekDaySelector input[type="checkbox"]:checked + label {
+  cursor: default;
+}
+
+.previewModal {
+  max-height: 600px;
+}
+
+.cancelIcon {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--medium-gray);
+  padding: 15px 30px;
+  font-size: 25px;
+}
+
+.cancelIcon svg {
+  cursor: pointer;
+}

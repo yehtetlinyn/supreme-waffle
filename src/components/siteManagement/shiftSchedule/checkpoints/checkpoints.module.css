@@ -1,0 +1,28 @@
+.bodyContainer {
+    padding-bottom: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px 80px;
+    border: 1px solid var(--light-gray);
+    background: var(--input-border);
+}
+
+.emptyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px 80px;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.titleContainer .blueText {
+    margin-left: 5px;
+}

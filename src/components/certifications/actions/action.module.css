@@ -1,0 +1,62 @@
+.dropdown {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+}
+
+.dropdownToggle {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  border: 3px solid var(--off-white, #fcfcfc);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.dropdownToggle::after {
+  color: var(--primary-yellow);
+}
+
+.dropdownToggle:hover::after {
+  color: #fff;
+}
+
+.dropdownToggle:hover {
+  background: var(--primary-yellow);
+  border: 3px solid var(--primary-yellow);
+}
+
+.iconGrid {
+  border: none;
+  padding: 0;
+  max-width: none;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2),
+    -2px -2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.gridContainer button {
+  padding: 0;
+  display: flex;
+  width: 35px;
+  height: 30px;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 3px solid var(--cyan, rgba(255, 208, 0, 1));
+  background: #fff;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}

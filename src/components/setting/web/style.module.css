@@ -1,0 +1,148 @@
+/* MainPage.module.css */
+.cardContainer {
+  display: flex;
+}
+
+.cardColumn {
+  width: 50%;
+  padding-top: 1rem;
+}
+
+.card {
+  margin: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px rgb(200, 200, 200);
+  transition: box-shadow 0.3s ease;
+  background-color: var(--card-bg);
+}
+
+.card:hover {
+  box-shadow: 2px 2px 10px var(--card-border-rgb);
+}
+
+/* styles.css */
+.brandStyleContainer {
+  overflow: auto;
+  height: 600px;
+  padding-bottom: 8rem;
+}
+.dropdown {
+  border: 1px solid #000;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -80%);
+  border-width: 12px 10px 0;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.colorPicker {
+  width: 20px;
+  height: 20px;
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+.colorCategory {
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+}
+.btnWrapper {
+  display: flex;
+  gap: 2em;
+  justify-content: flex-end;
+  margin: 2rem 0rem;
+  padding-top: 5rem;
+}
+.colorCode {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.resetBtn {
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.themeBtn {
+  width: 130px;
+  height: 100px;
+  border: 1px solid var(--gray-01, #b3b3b3);
+}
+
+.label {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.footerText {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0px;
+}
+.warningText {
+  color: var(--text-warning);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.imageBox {
+  position: relative;
+  width: 150px;
+  height: 80px;
+  border: 2px dashed rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.imageInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.uploadIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: gray;
+}
+.imageRemoveBtn {
+  border: none;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  text-align: center;
+  width: 25%;
+  margin-top: 8px;
+}
+.optionText {
+  color: rgba(0, 0, 0, 0.5);
+
+  font-weight: 400;
+}
