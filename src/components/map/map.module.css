@@ -1,0 +1,39 @@
+.modalheader {
+  display: block;
+}
+
+.modalheader h5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalbody {
+  width: 100%;
+  height: 300px;
+}
+
+.tail {
+  margin: 1rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+
+.zoomNote {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.locationName span {
+  display: inline-block;
+  font-size: 0.8rem;
+  background-color: var(--mint-cream-yellow);
+  color: var(--primary-font);
+  padding: 4px 10px;
+  border-radius: 18px;
+}
+
+.mapModal {
+  opacity: 0.2 !important;
+}

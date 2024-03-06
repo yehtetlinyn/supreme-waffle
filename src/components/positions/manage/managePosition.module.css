@@ -1,0 +1,16 @@
+.tableRow {
+  vertical-align: middle;
+}
+
+.selectedRow td {
+  vertical-align: middle;
+    background-color: var(--mint-cream-yellow) !important;
+  }
+
+.selectedRow td:first-child {
+  border-left: 3px solid var(--primary-yellow);
+}
+
+.descExpand {
+  cursor: pointer;
+}

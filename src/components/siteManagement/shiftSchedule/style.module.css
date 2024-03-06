@@ -1,0 +1,408 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: content-box;
+    margin-bottom: 10rem;
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.containerWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border-radius: 8px;
+    padding-bottom: 2rem;
+    flex-direction: column;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    border-radius: 6px;
+    overflow-y: hidden;
+}
+
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px 40px 20px;
+    width: 100%;
+    flex-shrink: 0;
+    overflow-y: scroll;
+}
+
+/* collapse styles */
+.collapseWrapper {
+    max-height: 90%;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.collapsedClosed {
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+.collapsedOpen {
+    margin-bottom: 20px;
+}
+
+.shiftScheduleContainer {
+    margin: 20px;
+}
+
+.headerCellContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.leftContent {
+    flex: 1;
+    align-self: center;
+}
+
+.rightContent {
+    position: absolute;
+    right: -10%;
+    top: -50%;
+}
+
+.fullContent {
+    position: absolute;
+    right: 100%;
+    top: 70%;
+}
+
+.assignUserBtn {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.cell {
+    position: relative;
+}
+
+.emptyCell {
+    position: relative;
+    padding: 30px;
+}
+
+.disabledCell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--input-border);
+    padding: 50px;
+}
+
+.profileImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.conflicted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid var(--error-border);
+}
+
+.conflictedIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    padding: 0 0.5px;
+}
+
+.conflictedIcon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px var(--light-gray));
+}
+
+.header {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .title {
+    color: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.header .subHeader {
+    color: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.closeBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.refreshBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 30px;
+    cursor: pointer;
+}
+
+.actionBtn {
+    position: relative;
+    display: inline-flex;
+    margin-left: 1rem;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    color: var(--primary-yellow);
+    border: 1px solid var(--primary-yellow);
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.42px;
+    transition: all 300ms ease-out;
+}
+
+.actionBtn:hover {
+    color: var(--white);
+    background-color: var(--hover-yellow);
+    border: 1px solid var(--light-gray);
+}
+
+/* shift schedule header styles */
+.optionsWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.optionContent {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 0;
+}
+
+.optionContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 1.5rem;
+}
+
+.optionColumn {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.optionsGroup {
+    display: flex;
+    align-items: flex-end;
+}
+
+.optionHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.timeline {
+    margin: 30px 0 15px;
+    color: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.label {
+    margin: 30px 0 15px;
+    color: var(--primary-font);
+    font-size: 1rem;
+}
+
+.avatarName {
+    color: var(--medium-gray);
+    font-size: 1rem;
+}
+
+.circularAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.optionColumn .shiftCount {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2f4858;
+    text-align: center;
+    padding: 3px 10px;
+    width: 40px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin-left: 10px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--font-color, #2f4858);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08),
+        0px 4px 6px 0px rgba(50, 50, 93, 0.11);
+}
+
+.assignUserRow {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    padding: 8px 0;
+    border-radius: 2px;
+    border: 1px solid var(--light-gray);
+}
+
+.assignUserContact {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.assignUserContact>div {
+    text-align: justify;
+}
+
+.assignUserRole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    text-align: center;
+}
+
+.assignUserStatus {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.assignUserStatus .statusItems {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.alignStart {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.selectedRow {
+    vertical-align: middle;
+    background-color: var(--mint-cream-yellow) !important;
+}
+
+/* .selectedRow:hover {
+    box-shadow: 0px 4px 10px 0px rgba(255, 208, 0, 0.66),
+        0px -2px 4px 0px rgba(255, 208, 0, 0.6) !important;
+} */
+
+.emptyData {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* check wrapper styles */
+.checkWrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/* radio unchecked state */
+.checkWrapper input[type="radio"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-yellow);
+    border-radius: 50%;
+}
+
+/* checkbox unchecked state */
+.checkWrapper input[type="checkbox"] {
+    display: none;
+}
+
+.checkWrapper .checkboxLabel {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-yellow);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkWrapper .disabledCheckLabel {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--light-gray);
+    border-radius: 4px;
+    cursor: default;
+}
+
+/* radio checked state */
+.checkWrapper input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary-yellow);
+    border-radius: 50%;
+}
+
+/* checkbox checked state */
+.checkWrapper input[type="checkbox"]:checked+label {
+    border: none;
+    background-image: url("../../../assets/image/tickIcon.jpg");
+}
+
+.checkWrapper input[type="checkbox"]:disabled+label {
+    background-color: var(--white);
+}

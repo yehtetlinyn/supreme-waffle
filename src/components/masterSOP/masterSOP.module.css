@@ -1,0 +1,5 @@
+.taskWrapper {
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  padding: 20px;
+}
