@@ -7,7 +7,7 @@ const NextAppConfig = {
     appDir: true,
   },
   images: {
-    domains: ["tossakan.s3.ap-southeast-1.wasabisys.com"],
+    domains: ["example.com"],
     // remotePatterns: [
     //   {
     //     protocol: "https",
